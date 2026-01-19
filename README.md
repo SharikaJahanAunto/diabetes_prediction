@@ -1,88 +1,100 @@
-🩺 Diabetes Prediction using Machine Learning
+# 🩺 Diabetes Prediction using Machine Learning
 
-This project implements an end-to-end Machine Learning pipeline to predict diabetes based on medical attributes. It covers data preprocessing, model training, evaluation, and deployment with a user-friendly web interface.
+An end-to-end Machine Learning project that predicts the likelihood of diabetes using clinical data. The project demonstrates the complete ML lifecycle—from data preprocessing and model training to deployment as a web application.
 
-📌 Project Overview
+---
 
-The goal of this project is to build a reliable binary classification system that predicts whether a patient is diabetic or not using clinical features such as glucose level, BMI, blood pressure, insulin level, and age. The solution follows standard Machine Learning practices and is deployed as a web application.
+## 🚀 Overview
 
-📊 Dataset
+This project builds a binary classification system to determine whether a patient is diabetic based on medical attributes such as glucose level, BMI, blood pressure, insulin, and age. A standardized ML pipeline is used to ensure reproducibility, robustness, and scalability. The final model is deployed with an interactive Gradio interface on Hugging Face Spaces.
 
-Name: Diabetes Dataset
+---
 
-Type: Structured tabular data
+## 📊 Dataset
 
-Target Variable: Outcome (0 = Not Diabetic, 1 = Diabetic)
+* **Type:** Tabular medical dataset
+* **Target:** `Outcome` (0 = Not Diabetic, 1 = Diabetic)
+* **Features:**
 
-Features: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
+  * Pregnancies
+  * Glucose
+  * BloodPressure
+  * SkinThickness
+  * Insulin
+  * BMI
+  * DiabetesPedigreeFunction
+  * Age
 
-⚙️ Methodology
+---
 
-The project follows these key steps:
+## ⚙️ Workflow
 
-Data loading and validation
+1. Data loading and validation
+2. Data preprocessing (missing value handling, scaling)
+3. Machine Learning pipeline construction
+4. Model training using Logistic Regression
+5. Cross-validation for performance stability
+6. Hyperparameter tuning with Grid Search
+7. Final model evaluation on test data
+8. Web application development with Gradio
+9. Deployment on Hugging Face Spaces
 
-Data preprocessing (handling missing values, scaling, feature preparation)
+---
 
-Machine Learning pipeline creation
+## 🧠 Model
 
-Model training using Logistic Regression
+* **Algorithm:** Logistic Regression
+* **Why:** Simple, interpretable, efficient, and well-suited for binary classification problems in healthcare.
 
-Cross-validation for robustness evaluation
+---
 
-Hyperparameter tuning using Grid Search
+## 📈 Evaluation Metrics
 
-Final model selection and test evaluation
+* Accuracy
+* Precision, Recall, F1-score
+* Confusion Matrix
+* Cross-validation mean score and standard deviation
 
-Web interface development using Gradio
+---
 
-Deployment on Hugging Face Spaces
+## 🌐 Web Application
 
-🧠 Model Used
+The project includes a Gradio-based web interface that allows users to input patient data and receive real-time diabetes predictions.
+The application is publicly accessible via **Hugging Face Spaces**.
 
-Algorithm: Logistic Regression
+---
 
-Reason: Efficient, interpretable, and well-suited for binary classification problems, especially in healthcare applications.
+## 🛠️ Tech Stack
 
-📈 Model Evaluation
+* Python
+* Pandas, NumPy
+* Scikit-learn
+* Gradio
+* Hugging Face Spaces
 
-The model is evaluated using:
+---
 
-Accuracy
+## 📁 Project Structure
 
-Precision, Recall, and F1-score
-
-Confusion Matrix
-
-Cross-validation mean accuracy and standard deviation
-
-🌐 Web Application
-
-A Gradio-based web interface allows users to input patient medical data and receive real-time diabetes predictions.
-The application is deployed publicly using Hugging Face Spaces.
-
-🛠️ Technologies Used
-
-Python
-
-Pandas, NumPy
-
-Scikit-learn
-
-Gradio
-
-Hugging Face Spaces
-
-📁 Project Structure
+```
 ├── app.py
 ├── diabetes.csv
 ├── requirements.txt
 ├── README.md
+```
 
-▶️ How to Run Locally
+---
+
+## ▶️ Run Locally
+
+```bash
 pip install -r requirements.txt
 python app.py
+```
 
-📄 License
+---
 
-This project is developed for academic purposes.
+## 📄 License
+
+This project is intended for educational and academic use.
+
